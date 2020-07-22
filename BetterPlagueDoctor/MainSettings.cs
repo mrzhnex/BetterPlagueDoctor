@@ -4,8 +4,8 @@ namespace BetterPlagueDoctor
 {
     public class MainSettings : Plugin
     {
-        public override string getName => "BetterPlagueDoctor";
-        private SetEvents SetEvents;
+        public override string getName => nameof(BetterPlagueDoctor);
+        public SetEvents SetEvents { get; set; }
 
         public override void OnEnable()
         {
